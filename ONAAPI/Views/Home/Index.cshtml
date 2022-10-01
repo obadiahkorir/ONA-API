@@ -1,0 +1,33 @@
+﻿@model ONAAPI.Models.Parameters
+@{
+
+}
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.LabelFor(model => model.ProjectId, new { @class = "label" })
+        <label class="input">
+            @Html.TextBoxFor(model => model.ProjectId, new { @class = "form-control", @placeholder = Html.DisplayNameFor(x => x.ProjectId) })
+            @Html.ValidationMessageFor(model => model.ProjectId)
+        </label>
+        @Html.LabelFor(model => model.FormId, new { @class = "label" })
+        <label class="input">
+            @Html.TextBoxFor(model => model.FormId, new { @class = "form-control", @placeholder = Html.DisplayNameFor(x => x.FormId) })
+            @Html.ValidationMessageFor(model => model.FormId)
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>ONA </h2>
+        <p>Trusted mobile survey software that works offline</p>
+    </div>
+    <div class="col-md-4">
+        <h2>ONA</h2>
+        <p>Trusted mobile survey software that works offline</p>
+    </div>
+    <div class="col-md-4">
+        <h2>ONA</h2>
+        <p>Trusted mobile survey software that works offline</p>
+    </div>
+</div>
